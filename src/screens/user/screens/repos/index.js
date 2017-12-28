@@ -116,13 +116,15 @@ export default class UserRepos extends Component {
 	}
 }
 
-const LOADING = <div>Loading</div>;
+const LOADING = <div className={styles.message}>Loading</div>;
 
-const EMPTY = <div>Your repository list is empty</div>;
+const EMPTY = (
+	<div className={styles.message}>Your repository list is empty</div>
+);
 
-const NO_MATCHES = <div>No matches found</div>;
+const NO_MATCHES = <div className={styles.message}>No matches found</div>;
 
-const ERROR = <div>Error</div>;
+const ERROR = <div className={styles.message}>Error</div>;
 
 /* eslint-disable react/jsx-key */
 export class UserRepoTitle extends Component {
